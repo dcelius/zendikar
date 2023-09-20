@@ -1,0 +1,72 @@
+
+/* Add a black background color to the top navigation */
+.topnav {
+	overflow: hidden;
+	position: fixed;
+	z-index: 10000;
+	width: 100%;
+	background: #272d39;
+	background: rgba(55, 61, 73, 0.975);	
+	color: #fff;
+	margin: auto;
+}
+  
+  /* Change the color of links on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+	background-color: #ddd;
+	color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+	background-color: #e75a52;
+	color: white;
+  }
+
+  /* The dropdown container */
+.dropdown {
+	float: left;
+	overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+	text-decoration: none;
+	font-size: 17px;
+	text-align: center;
+	color: #f2f2f2;
+	padding: 8px 16px;
+	background-color: inherit;
+	font-family: inherit; /* Important for vertical align on mobile phones */
+	margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+	display: none;
+	position: fixed;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+	background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+	display: block;
+  }
