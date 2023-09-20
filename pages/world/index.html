@@ -21,6 +21,18 @@
 				$("#nav_holder").replaceWith(data);
 			});
 		</script>
+		<script>
+			$('#topnav a').attr('href', function(i,str){
+				if (window.location.href.includes("github.io")) 
+				{
+				  return '/zendikar/' + str;
+				}
+				else 
+				{
+				  return str;
+				}
+			  });
+		</script>
 	</head>
 	<body class="is-preload">
 		<div id="nav_holder"></div>
