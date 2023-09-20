@@ -14,13 +14,7 @@
 		<link rel="stylesheet" type="text/css" href="/zendikar/assets/css/nav.css" />
 		<script src="//code.jquery.com/jquery.min.js"></script>
 		<script>
-			let webTrue = window.location.href.includes("github.io");
-			let pathToNav = "nav.html";
-			if (webTrue) 
-			{
-				pathToNav = "/zendikar/nav.html";
-			}
-			$.get(pathToNav, function(data){
+			$.get("/zendikar/nav.html", function(data){
 				$("#nav_holder").replaceWith(data);
 			});
 		</script>
