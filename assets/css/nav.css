@@ -12,7 +12,7 @@
 }
   
   /* Change the color of links on hover */
-  .topnav a:hover, .dropdown:hover .dropbtn {
+  .dropdown:hover .dropbtn {
 	background-color: #ddd;
 	color: black;
   }
@@ -23,6 +23,25 @@
 	color: white;
   }
 
+  .right {
+	  float: right;
+	  padding: 5px;
+  }
+  .left {
+	float: left;
+	padding: 5px;
+  }
+  .logo {
+	text-decoration: none;
+	font-weight: bolder;
+	font-size: 20px;
+	text-align: center;
+	color: #f2f2f2;
+	padding: 8px 16px;
+	background-color: inherit;
+	font-family: inherit; /* Important for vertical align on mobile phones */
+	margin: 0; /* Important for vertical align on mobile phones */
+  }
   /* The dropdown container */
 .dropdown {
 	float: left;
@@ -32,7 +51,7 @@
   /* Dropdown button */
   .dropdown .dropbtn {
 	text-decoration: none;
-	font-size: 17px;
+	font-size: 20px;
 	text-align: center;
 	color: #f2f2f2;
 	padding: 8px 16px;
