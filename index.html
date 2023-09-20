@@ -20,7 +20,7 @@
 		</script>
 		<script>
 			$("*").attr('href', function(i,str){
-				if (window.location.href.includes("github.io")) 
+				if (window.location.href.includes("github.io") && str) 
 				{
 				  return '/zendikar/' + str;
 				}
