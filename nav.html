@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/nav.css">
     <script src="//code.jquery.com/jquery.min.js"></script>
 		<script>
-			$().attr('href', function(i,str){
+			$('#topnav a').attr('href', function(i,str){
         if (window.location.href.includes("github.io")) 
         {
           return '/zendikar/' + str;
