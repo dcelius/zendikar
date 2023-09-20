@@ -17,15 +17,30 @@
 		<link rel="stylesheet" type="text/css" href="/assets/css/nav.css" />
 		<script src="//code.jquery.com/jquery.min.js"></script>
 		<script>
-			$.get("/nav.html", function(data){
+			let webTrue = window.location.href.includes("github.io");
+			let pathToNav = "nav.html";
+			if (webTrue) 
+			{
+				pathToNav = "/zendikar/nav.html";
+			}
+			$.get(pathToNav, function(data){
 				$("#nav_holder").replaceWith(data);
 			});
-		</script>
-		<script>
-			$("*").attr('href', function(i,str){
+			let elements = $("*");
+			elements.attr('href', function(i,str){
 				if (window.location.href.includes("github.io") && str) 
 				{
-				  return '/zendikar/' + str;
+				  return '/zendikar' + str;
+				}
+				else 
+				{
+				  return str;
+				}
+			  });
+			elements.attr('src', function(i,str){
+				if (window.location.href.includes("github.io") && str) 
+				{
+				  return '/zendikar' + str;
 				}
 				else 
 				{
