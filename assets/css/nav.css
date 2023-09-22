@@ -16,15 +16,12 @@
 	background-color: #ddd;
 	color: black;
   }
-  .dropdown:hover .dropbtn {
-	color: black;
-	pointer-events: all;
-  }
+
   
   /* Add a color to the active/current link */
   .topnav a.active {
-	background-color: #e75a52;
-	color: white;
+	color: black;
+	pointer-events: all;
   }
 
   .top {

@@ -15,14 +15,16 @@
           </a>
       </div>
       <div class="bottom">
-        <div class="dropdown">
-          <a class="dropbtn" href="/zendikar/pages/races/">Races</a>
+        <div class="dropdown" onclick="dropdown()">
+          <a class="dropbtn" href="/zendikar/pages/races/" id="races">Races</a>
           <div class="dropdown-content">
             <a href="/zendikar/pages/races/elves.html">Elves</a>
             <a href="/zendikar/pages/races/goblins.html">Goblins</a>
+            <a href="/zendikar/pages/races/humans.html">Humans</a>
             <a href="/zendikar/pages/races/kor.html">Kor</a>
             <a href="/zendikar/pages/races/merfolk.html">Merfolk</a>
             <a href="/zendikar/pages/races/vampires.html">Vampires</a>
+            <a href="/zendikar/pages/races/others.html">Other Races</a>
           </div>
         </div>
         <div class="divider">|</div>
@@ -50,4 +52,21 @@
       </div>
     </div>
   </body>
+  <script>
+    var i = 0;
+    function dropdown() {
+      i++;
+      if (i==2) {
+        var element = document.getElementById("races");
+        element.classList.add("active");
+        alert("i == 2");
+        i = 0;
+      }
+      else {
+        alert("i == 1");
+        var element = document.getElementById("races");
+        element.classList.remove("active");
+      }
+    }
+  </script>
 </html>
